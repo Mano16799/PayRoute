@@ -1,0 +1,371 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button{
+    font-family: "Open Sans";
+    font-size: 13px;
+    text-decoration: none;
+    margin: 10px ;
+    padding: 2px 10px;
+    border: 2px solid rgb(37, 146, 236);
+}
+.login,.signup:hover{
+    background-color: white;
+    color: rgb(37, 146, 236);
+    border-radius: 20px;
+}
+.signup,.login:hover,.btn:hover,.btn2:hover{
+    color: white;
+    background-color:rgb(37, 146, 236) ;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+header>img{
+    height: 30px;
+}
+/* [ON BIG SCREEN] */
+/* (A) WRAPPER */
+#hamnav {
+    width: 50%;
+    margin: auto;
+}
+  
+  /* (B) HORIZONTAL MENU ITEMS */
+#hamitems { display: flex; }
+#hamitems a {
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 13px;
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.719);
+    text-decoration: none;
+    text-align: center;
+}
+#hamitems a:hover { 
+    background: rgb(37, 146, 236);
+    color: white;
+    font-weight: normal;
+}
+/* (C) HIDE HAMBURGER */
+#hamnav label, #hamburger,.tab-img { 
+    display: none; 
+}
+
+.blue-div1{
+    background-color: rgb(37, 146, 236);
+    text-align: center;
+    padding:50px 10px 0 10px;
+}
+.blue-div1>p{
+    font-family: "Open Sans";
+    font-size: 25px;
+    color: white;
+    width: 50%;
+    margin: 0 auto 40px;
+}
+.btn{
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration: none;
+    color:rgb(37, 146, 236);
+    border: 1 px solid white;
+    border-radius: 20px;
+    background-color: white;
+    padding: 10px 60px;
+}
+.features-imgs{
+    display: flex;
+    width: 90%;
+    margin: 30px auto 0;
+    justify-content: center;
+}
+.features-imgs img{
+    height: 150px;
+    margin: auto 50px;
+}
+.features-imgs h3{
+    font-family: "Open Sans";
+    font-weight: lighter;
+    color: white;
+    font-size: 15px;
+    width: 60%;
+    margin: 40px auto;
+}
+.features-imgs div{
+    display: inline-block;
+}
+.business{
+    background-color: rgb(26, 46, 138);
+    color: white;
+    padding: 40px 100px 50px;
+    text-align: center;
+}
+.business>p{
+    font-family: "Montserrat";
+    margin-top:0;
+    margin-bottom: 30px;
+}
+
+#features-desc img{
+    height: 200px;
+}
+#features-desc>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 5% 20%;
+}
+#features-desc h2{
+    font-family: "Open Sans";
+    color: rgb(37, 146, 236);
+    font-size: 20px;
+    font-weight: bold;
+}
+#features-desc p{
+    font-family: "Open Sans";
+    margin-bottom: 35px;
+}
+.img1{
+    float: right;
+    margin-left: 30px;
+}
+.img2{
+    float: left;
+    margin-right: 30px;
+}
+.btn2{
+    font-family: "Open Sans";
+    color: rgb(37, 146, 236);
+    background-color: white;
+    font-size: 15px;
+    text-decoration: none;
+    border: 2px solid rgb(37, 146, 236);
+    border-radius: 20px;
+    padding: 8px 60px;
+}
+.div-grey{
+    background-color: rgb(236, 236, 236);
+}
+.blue-div2{
+    background-color: rgb(37, 146, 236);
+    text-align: center;
+    padding:50px 10px;
+}
+.blue-div2>p{
+    font-family: "Open Sans";
+    font-size: 25px;
+    color: white;
+    width: 65%;
+    margin: 0 auto 40px;
+}
+.brands{
+    background-color: rgb(236, 236, 236);
+    text-align: center;
+    padding: 20px 0;
+    font-family: "Open Sans";
+    color: rgb(37, 146, 236);
+    font-weight: 700;
+}
+.brand-img>img{
+    padding: 0 40px;
+}
+footer{
+    width: 60%;
+    margin: 30px auto;
+}
+footer hr{
+    border: 1px solid rgba(0, 0, 0, 0.253);
+}
+footer p{
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: bold;
+    color:rgba(0, 0, 0, 0.473) ;
+    margin: 30px 0;
+}
+ul{
+    list-style: none;
+    display: flex;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: bold;
+}
+ul>li{
+    padding: 0 10px;
+}
+.grey-ul{
+    color:rgba(0, 0, 0, 0.473) ;
+}
+.tab-text{
+    display: none;
+}
+.mobile-only{
+    display: none;
+}
+
+@media screen and (max-width : 768px) {
+    .tab-img{
+        display: inline;
+        height: 40px;
+    }
+    #hamnav{
+        width: 20%;
+        margin: auto 0;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+      /* (A) BREAK INTO VERTICAL MENU */
+  #hamitems a {
+    display: block;
+    width: 100%;
+  }
+ 
+  /* (B) SHOW HAMBURGER ICON */
+  #hamnav label { 
+    display: inline-block; 
+    font-family: "Open Sans";
+    font-size: 13px;
+    text-decoration: none;
+    margin: 10px ;
+    padding: 2px 10px;
+    border: 2px solid rgb(37, 146, 236);
+    background-color: white;
+    color: rgb(37, 146, 236);
+    border-radius: 12px;
+  }
+
+  /* (C) TOGGLE SHOW/HIDE MENU */
+  #hamitems { 
+      display: none; 
+    }
+  #hamnav input:checked ~ #hamitems {
+       display: block; 
+    }
+    .hide-in-tab{
+        display: none !important;
+    }
+    .desktop-text{
+        display: none !important;
+    }
+    .tab-text{
+        display: block;
+        font-size: 20px !important;
+        margin: 20px auto !important;
+    }
+   
+    .blue-div1>p{
+        font-size: 35px;
+        width: 100%;
+    }
+    .features-imgs img{
+        height: 300px;
+    }
+    .business{
+        padding: 40px 0;
+    }
+    .business p{
+        margin-bottom: 40px !important;
+    }
+    #features-desc>div{
+        padding: 50px 30px;
+    }
+    #features-desc img{
+        height: 230px;
+    }
+    #features-desc p{
+        font-size: 15px;
+    }
+    #features-desc a{
+        font-size: 13px;
+    }
+    .brands p{
+        font-size: 25px;
+    }
+    .blue-div2{
+        padding: 30px 20px;
+    }
+    .blue-div2 p{
+        width: 85%;
+        font-size: 23px;
+    }
+    footer{
+        margin-left:30px ;
+    }
+    footer hr{
+        width: 90vw;
+    }
+    footer ul{
+        padding-left: 0;
+    }
+}
+@media screen and (max-width : 480px){
+    .features-imgs{
+        margin: 80px auto 0;
+        display: grid;
+        grid-gap: 40px;
+        grid-template-areas: "one two" "three four";
+    }
+    .hide-in-tab{
+        display: block !important;
+    }
+    .f-img1{
+        grid-area: one;
+    }
+    .f-img2{
+        grid-area: two;
+    }
+    .f-img3{
+        grid-area: three;
+    }
+    .f-img4{
+        grid-area: four;
+    }
+    .business p{
+        width: 80%;
+        margin: auto;
+    }
+    .features-imgs img{
+        height: 80px;
+        margin: 0;
+    }
+    .features-imgs h3{
+        display: none;
+    }
+    #features-desc div{
+        display: inline-block;
+        text-align: center;
+    }
+    .img1,.img2{
+        display: none;
+    }
+    .mobile-only{
+        display: block;
+        margin: 0 auto;
+    }
+    .brands p{
+        width: 70%;
+        margin: 20px auto;
+    }
+    .brand-img img{
+        padding: 0px 30px;
+    }
+    footer ul{
+        width: 70vw;
+        flex-wrap: wrap;
+    }
+    footer li{
+        margin-top: 15px;
+    }
+    footer hr, footer p{
+        width: 70vw;
+    }
+   
+}
